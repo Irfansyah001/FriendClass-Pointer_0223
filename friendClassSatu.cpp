@@ -2,3 +2,5 @@
 #include <string> // Menyertakan library string untuk menggunakan tipe data string
 using namespace std; // Menggunakan namespace std untuk menghindari penulisan std:: sebelum setiap penggunaan elemen dari library standar
 
+class siswa; // Forward declaration untuk kelas siswa agar dapat digunakan dalam deklarasi kelas orang
+
