@@ -11,3 +11,9 @@ public: // Deklarasi fungsi friend yang dapat mengakses anggota data private
     friend void setNama(mahasiswa &a, string); // Fungsi friend untuk mengatur nama mahasiswa
 };
 
+void setNama(mahasiswa &a, string b) // Definisi fungsi friend setNama yang mengubah nama mahasiswa dan menampilkannya
+{
+    a.nama = b; // Mengubah nama mahasiswa dengan nilai yang diberikan
+    cout << "Nama: " << a.nama << endl; // Menampilkan nama mahasiswa setelah diubah
+}
+
