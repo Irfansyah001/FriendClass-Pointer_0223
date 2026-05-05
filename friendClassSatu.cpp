@@ -30,3 +30,8 @@ void siswa::displayAll(orang &o) // Definisi fungsi displayAll yang mengakses an
     cout << "ID: " << id << endl; // Menampilkan ID siswa yang merupakan anggota data private dari kelas siswa yang diakses melalui objek siswa
 }
 
+void siswa::setId(int i) // Definisi fungsi setId yang mengubah ID siswa dengan nilai yang diberikan
+{
+    id = i; // Mengubah ID siswa dengan nilai yang diberikan
+}
+
