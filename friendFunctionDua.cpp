@@ -9,3 +9,13 @@ public: // Deklarasi fungsi friend yang dapat mengakses anggota data private dar
     void showNilaiPelajar(pelajar &p); // Fungsi untuk menampilkan nilai pelajar yang akan diakses melalui objek manusia
 };
 
+class pelajar // Deklarasi kelas pelajar yang memiliki anggota data private dan fungsi friend untuk diakses oleh kelas manusia
+{
+private: // Anggota data private untuk menyimpan nilai pelajar
+    int nilai; // Variabel untuk menyimpan nilai pelajar
+
+public: // Konstruktor untuk menginisialisasi nilai pelajar
+    pelajar() { nilai = 100; } // Konstruktor default yang menginisialisasi nilai pelajar dengan 100
+    friend void manusia::showNilaiPelajar(pelajar &p); // Deklarasi fungsi friend yang memungkinkan kelas manusia untuk mengakses anggota data private dari kelas pelajar
+};
+
