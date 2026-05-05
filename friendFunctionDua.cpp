@@ -24,3 +24,11 @@ void manusia::showNilaiPelajar(pelajar &p) // Definisi fungsi showNilaiPelajar y
     cout << "Nilai Pelajar: " << p.nilai << endl; // Menampilkan nilai pelajar yang diakses melalui objek manusia
 }
 
+int main() // Fungsi utama untuk menjalankan program
+{
+    manusia m; // Membuat objek m dari kelas manusia
+    pelajar p; // Membuat objek p dari kelas pelajar yang secara otomatis memiliki nilai 100 karena konstruktor default
+    m.showNilaiPelajar(p); // Memanggil fungsi showNilaiPelajar untuk menampilkan nilai pelajar yang diakses melalui objek manusia
+
+    return 0; // Mengembalikan nilai 0 untuk menandakan program selesai dengan sukses
+}
