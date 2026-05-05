@@ -8,3 +8,18 @@ dari Layang-Layang, dan semua class hanya dapat diakses menggunakan object.
 #include <iostream> // Menyertakan library iostream untuk input dan output
 using namespace std; // Menggunakan namespace std untuk menghindari penulisan std:: sebelum setiap penggunaan elemen dari library standar
 
+class layangLayang; // Forward declaration untuk kelas layangLayang agar dapat digunakan dalam deklarasi kelas belahKetupat
+
+class belahKetupat { // Deklarasi kelas belahKetupat yang memiliki anggota data private dan fungsi untuk input, output, luas, dan keliling
+private: // Anggota data private untuk menyimpan diagonal dan sisi belahKetupat
+    float diagonal1; // Variabel untuk menyimpan diagonal 1 belahKetupat
+    float diagonal2; // Variabel untuk menyimpan diagonal 2 belahKetupat
+    float sisi; // Variabel untuk menyimpan panjang sisi belahKetupat
+
+public: // Deklarasi fungsi untuk input, output, luas, dan keliling belahKetupat, serta deklarasi friend method keliling yang dapat mengakses anggota data private dari kelas layangLayang
+    void input(); // Fungsi untuk menginput data belahKetupat
+    void output(); // Fungsi untuk menampilkan data belahKetupat
+    void luas(); // Fungsi untuk menghitung dan menampilkan luas belahKetupat
+    void keliling(layangLayang &ll); // Fungsi untuk menghitung dan menampilkan keliling belahKetupat, serta mengakses anggota data private dari kelas layangLayang melalui friend method
+};
+
