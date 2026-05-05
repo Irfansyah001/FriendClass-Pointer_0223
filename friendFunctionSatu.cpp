@@ -17,3 +17,10 @@ void setNama(mahasiswa &a, string b) // Definisi fungsi friend setNama yang meng
     cout << "Nama: " << a.nama << endl; // Menampilkan nama mahasiswa setelah diubah
 }
 
+int main() // Fungsi utama untuk menjalankan program
+{
+    mahasiswa mhs; // Membuat objek mhs dari kelas mahasiswa
+    setNama(mhs, "Irfansyah"); // Memanggil fungsi friend setNama untuk mengubah nama mhs dan menampilkannya
+
+    return 0; // Mengembalikan nilai 0 untuk menandakan program selesai dengan sukses
+}
