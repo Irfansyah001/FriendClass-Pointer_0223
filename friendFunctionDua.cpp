@@ -19,3 +19,8 @@ public: // Konstruktor untuk menginisialisasi nilai pelajar
     friend void manusia::showNilaiPelajar(pelajar &p); // Deklarasi fungsi friend yang memungkinkan kelas manusia untuk mengakses anggota data private dari kelas pelajar
 };
 
+void manusia::showNilaiPelajar(pelajar &p) // Definisi fungsi showNilaiPelajar yang mengakses anggota data private dari kelas pelajar dan menampilkannya
+{
+    cout << "Nilai Pelajar: " << p.nilai << endl; // Menampilkan nilai pelajar yang diakses melalui objek manusia
+}
+
