@@ -14,3 +14,13 @@ public: // Deklarasi fungsi untuk mengatur nama orang dan deklarasi kelas friend
     friend class siswa; // Deklarasi kelas friend siswa yang memungkinkan kelas siswa untuk mengakses anggota data private dari kelas orang
 };
 
+class siswa // Deklarasi kelas siswa yang memiliki anggota data private
+{
+private: // Anggota data private untuk menyimpan ID siswa
+    int id; // Variabel untuk menyimpan ID siswa
+
+public: // Deklarasi fungsi untuk mengatur ID siswa dan menampilkan semua informasi siswa yang akan diakses melalui objek orang
+    void setId(int i); // Fungsi untuk mengatur ID siswa
+    void displayAll(orang &o); // Fungsi untuk menampilkan semua informasi siswa yang akan diakses melalui objek orang, termasuk nama yang merupakan anggota data private dari kelas orang yang dapat diakses karena kelas siswa adalah friend class dari kelas orang
+};
+
