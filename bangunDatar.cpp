@@ -98,3 +98,25 @@ void layangLayang::keliling() { // Definisi fungsi keliling untuk kelas layangLa
     cout << "Keliling Layang-Layang : " << k << endl; // Menampilkan hasil keliling layangLayang
 }
 
+int main() { // Fungsi utama untuk menjalankan program
+    layangLayang ll; // Membuat objek ll dari kelas layangLayang
+    belahKetupat bk; // Membuat objek bk dari kelas belahKetupat
+
+    ll.input(); // Memanggil fungsi input untuk menginput data layangLayang
+    cout << endl; // Menambahkan baris kosong untuk pemisah antara input layangLayang dan output layangLayang
+    ll.output(); // Memanggil fungsi output untuk menampilkan data layangLayang
+    ll.luas(); // Memanggil fungsi luas untuk menghitung dan menampilkan luas layangLayang
+    ll.keliling(); // Memanggil fungsi keliling untuk menghitung dan menampilkan keliling layangLayang
+
+    cout << endl; // Menambahkan baris kosong untuk pemisah antara output layangLayang dan input belahKetupat
+
+    bk.input(); // Memanggil fungsi input untuk menginput data belahKetupat
+    cout << endl; // Menambahkan baris kosong untuk pemisah antara input belahKetupat dan output belahKetupat
+    bk.output(); // Memanggil fungsi output untuk menampilkan data belahKetupat
+    bk.luas(); // Memanggil fungsi luas untuk menghitung dan menampilkan luas belahKetupat
+
+    cout << endl; // Menambahkan baris kosong untuk pemisah antara output belahKetupat dan keliling belahKetupat
+    bk.keliling(ll); // Memanggil fungsi keliling untuk menghitung dan menampilkan keliling belahKetupat, serta mengakses anggota data private dari kelas layangLayang melalui friend method
+
+    return 0; // Mengembalikan nilai 0 untuk menandakan program selesai dengan sukses
+}
