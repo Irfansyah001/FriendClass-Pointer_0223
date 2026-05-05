@@ -35,3 +35,8 @@ void siswa::setId(int i) // Definisi fungsi setId yang mengubah ID siswa dengan 
     id = i; // Mengubah ID siswa dengan nilai yang diberikan
 }
 
+void orang::setNama(string n) // Definisi fungsi setNama yang mengubah nama orang dengan nilai yang diberikan
+{
+    nama = n; // Mengubah nama orang dengan nilai yang diberikan
+}
+
