@@ -24,3 +24,9 @@ public: // Deklarasi fungsi untuk mengatur ID siswa dan menampilkan semua inform
     void displayAll(orang &o); // Fungsi untuk menampilkan semua informasi siswa yang akan diakses melalui objek orang, termasuk nama yang merupakan anggota data private dari kelas orang yang dapat diakses karena kelas siswa adalah friend class dari kelas orang
 };
 
+void siswa::displayAll(orang &o) // Definisi fungsi displayAll yang mengakses anggota data private dari kelas orang dan menampilkannya bersama dengan ID siswa
+{
+    cout << "Nama: " << o.nama << endl; // Menampilkan nama orang yang diakses melalui objek orang
+    cout << "ID: " << id << endl; // Menampilkan ID siswa yang merupakan anggota data private dari kelas siswa yang diakses melalui objek siswa
+}
+
