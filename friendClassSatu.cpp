@@ -40,3 +40,13 @@ void orang::setNama(string n) // Definisi fungsi setNama yang mengubah nama oran
     nama = n; // Mengubah nama orang dengan nilai yang diberikan
 }
 
+int main() // Fungsi utama untuk menjalankan program
+{
+    orang o; // Membuat objek o dari kelas orang
+    siswa s; // Membuat objek s dari kelas siswa
+    o.setNama("Irfansyah"); // Memanggil fungsi setNama untuk mengubah nama o menjadi "Irfansyah"
+    s.setId(12345); // Memanggil fungsi setId untuk mengubah ID s menjadi 12345
+    s.displayAll(o); // Memanggil fungsi displayAll untuk menampilkan semua informasi siswa yang diakses melalui objek orang, termasuk nama yang merupakan anggota data private dari kelas orang yang dapat diakses karena kelas siswa adalah friend class dari kelas orang
+
+    return 0; // Mengembalikan nilai 0 untuk menandakan program selesai dengan sukses
+}
